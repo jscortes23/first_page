@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 62.5%;
+}
+
+:root {
+    --primary-color: #f86250;
+    --secondary-color: #183643;
+    --font-img: #31c6db;
+    --grey: #4b4b4b;
+
+    --lg: ;
+    --md: 1.8rem;
+    --sm: 1.4rem;
+}
+
+
+.navbar {
+    width: 100%;
+    display: grid;
+    padding: 12px;
+    grid-template-columns: min-content auto min-content;
+    align-items: center;
+    justify-items: center;
+}
+
+.nav--left {
+    display: flex;
+    place-items: center;
+    column-gap: 12px;
+}
+
+.nav--center {
+    display: flex;
+    place-items: center;
+    column-gap: 32px;
+}
+
+.nav--right {
+    margin-right: 8px;
+    display: flex;
+    place-items: center;
+    column-gap: 34px;
+}
+
+.text-md {
+    font-size: var(--md);
+}
+
+.text-sm {
+    font-size: var(--sm);
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-grey {
+    color: var(--grey);
+}
+
+.link-sm {
+    font-size: var(--sm);
+    color: var(--grey);
+}
+
+.link-sm:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.btn {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: var(--md);
+    background-color: white;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    padding: 12px calc(12px * 2);
+    white-space: nowrap;
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    box-shadow: 8px 8px var(--secondary-color);
+}
+
+.icon {
+    display: inline-block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon-sm {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-md {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-logo {
+    background-image: url('/assets/icons/huella-mascota.svg');
+}
+
+.icon-search {
+    background-image: url('/assets/icons/busqueda.svg');
+
+}
+.icon-bag {
+    background-image: url('/assets/icons/bolsa-de-compra.svg');
+}
