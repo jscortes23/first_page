@@ -35,7 +35,7 @@ html {
     --grey: #757575;
 
     --lg-xxx: 2.8rem;
-    --lg-xx: 2.8rem;
+    --lg-xx: 2.6rem;
     --lg-x: 2.8rem;
     --lg: 2rem;
     --md: 1.6rem;
@@ -120,6 +120,10 @@ html {
     box-shadow: 8px 8px var(--secondary-color);
 }
 
+.btn-primary:hover {
+    background-color: #ff1e05;
+}
+
 .btn-menu {
     justify-self: end;
 }
@@ -148,6 +152,14 @@ html {
     background-color: var(--primary-color);
     border: 2px solid black;
     border-radius: 50%;
+}
+
+.icon-square {
+    width: 68px;
+    height: 68px;
+    background-size: 64%;
+    border: 2px solid black;
+    border-radius: 6px;
 }
 
 .icon-logo {
@@ -181,6 +193,14 @@ html {
 
 .icon-bones {
     background-image: url('/assets/icons/hueso.png');
+}
+
+.icon-food-pets {
+    background-image: url('/assets/icons/comida-de-perro.png');
+}
+
+.icon-cage-pets {
+    background-image: url('/assets/icons/jaula-para-mascotas.png');
 }
 
 .color-primary {
@@ -280,6 +300,16 @@ html {
     object-fit: cover;
 }
 
+.img__find {
+    width: 180px;
+    aspect-ratio: 2/3;
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: -8px 8px var(--primary-color);
+    object-position: center;
+    object-fit: cover;
+}
+
 .container__img__description {
     align-items: center;
     justify-content: space-evenly;
@@ -299,19 +329,20 @@ html {
     padding: 98px 16px 132px;
 }
 
-.h2:first-child {
+.h2:nth-child(0) {
     text-align: center;
 }
 
 .container__card-meet {
     margin-top: 48px;
+    margin-bottom: 108px;
     gap: 24px;
     place-content: center;
 }
 
 .card-meet {
     min-width: 256px;
-    max-width: 300px;
+    max-width: 332px;
     padding: 16px;
     border: 2px solid black;
     border-radius: 6px;
@@ -349,6 +380,37 @@ html {
 .text__img__description {
     font-weight: bold;
     font-size: var(--lg-x);
+}
+
+.container__find {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 48px;
+}
+
+.find--left {
+    display: grid;
+    padding: 0 12px;
+    grid-template-columns: repeat(3, minmax(min-content, 100px));
+    grid-template-rows: repeat(2, minmax(min-content, 100px));
+    place-items: center;
+    place-content: center;
+    gap: 24px;
+}
+
+.find--right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 364px;
+    max-width: 580px;
+}
+
+.find--right .btn {
+    align-self: start;
 }
 
 .h1 {

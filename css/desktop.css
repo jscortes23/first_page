@@ -1,3 +1,13 @@
 .container__home {
     justify-content: space-around;
 }
+
+.find--left {
+    padding-left: 114px;
+    padding-right: 0;
+}
+
+.find--right {
+    padding-right: 114px;
+    padding-left: 0;
+}
