@@ -317,6 +317,27 @@ html {
     border-radius: 6px;
 }
 
+.transition-color {
+    transition: 
+    color 200ms ease-in,
+    background-color 200ms ease-in,
+    box-shadow 200ms ease-in;
+}
+
+.card-meet:hover {
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 8px 8px black;
+}
+
+.card-meet:hover .icon-card {
+    background-color: var(--font-img);
+}
+
+.card-meet:hover .text {
+    color: white;
+}
+
 .card-meet__title {
     margin-bottom: 18px;
     display: grid;
