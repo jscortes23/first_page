@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home pet - Find your happiness by adopting a pets</title>
     <link rel="stylesheet" href="/css/mobile.css" />
+    <link rel="stylesheet" media="(min-width: 720px)" href="/css/tablet.css">
+    <link rel="stylesheet" media="(min-width: 1024px)" href="/css/desktop.css">
   </head>
   <body>
     <nav class="navbar">
@@ -36,8 +38,11 @@
         </button>
         <button class="btn btn-primary">Login in</button>
       </div>
+      <button class="btn btn-menu">
+        <span class="icon icon-sm icon-menu"></span>
+      </button>
     </nav>
-    <section class="grid container container__home" id="Home">
+    <section class="flex container container__home" id="Home">
       <div class="home--left flex flex-column">
         <h1 class="h1">Find <u class="underline">cute and smart</u> pets to play with you</h1>
         <p class="text">
@@ -46,13 +51,15 @@
         </p>
         <div class="flex">
           <button class="btn btn-primary">Explore Now</button>
-          <div class="container-sm">
-            <span class="text-lg-xx color-primary">2.5k+</span>
-            <span class="text">Customers</span>
-          </div>
-          <div class="container-sm">
-            <span class="text-lg-xx color-primary">370+</span>
-            <span class="text">Collections</span>
+          <div class="flex home__explore">
+            <div class="container-sm">
+              <span class="text-lg-xx color-primary">2.5k+</span>
+              <span class="text">Customers</span>
+            </div>
+            <div class="container-sm">
+              <span class="text-lg-xx color-primary">370+</span>
+              <span class="text">Collections</span>
+            </div>
           </div>
         </div>
       </div>
@@ -65,7 +72,7 @@
           />
           <div class="container__thing__pet">
             <span class="icon icon-md icon-necklace"></span>
-            <p class="text-sm text-grey">
+            <p class="text-sm text">
               Necklace with bell <span class="color-primary">$10</span> <br />
               Don't miss this opportunity
             </p>

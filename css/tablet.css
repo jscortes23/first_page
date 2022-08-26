@@ -1,0 +1,48 @@
+:root {
+    --lg-xxx: 4.6rem;
+    --lg-xx: 3rem;
+    --lg-x: 2.8rem;
+    --lg: 2;
+    --md: 1.8rem;
+    --sm: 1.4rem;
+}
+
+.navbar {
+    grid-template-columns: min-content auto min-content;
+}
+
+.nav--center {
+    display: flex;
+    place-items: center;
+    column-gap: 32px;
+}
+
+.nav--right {
+    margin-right: 8px;
+    display: flex;
+    place-items: center;
+    column-gap: 34px;
+}
+
+.btn-menu {
+    display: none;
+}
+
+.container__thing__pet {
+    position: absolute;
+    top: 58%;
+    left: -60%;
+    padding: 12px 24px;
+    display: grid;
+    grid-template-columns: min-content auto;
+    align-items: center;
+    column-gap: 24px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.h1 {
+    font-size: var(--lg-xxx);
+    line-height: 6.2rem;
+}
