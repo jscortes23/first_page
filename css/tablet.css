@@ -1,8 +1,7 @@
 :root {
     --lg-xxx: 4.6rem;
-    --lg-xx: 3rem;
+    --lg-xx: 3.8rem;
     --lg-x: 2.8rem;
-    --lg: 2;
     --md: 1.8rem;
     --sm: 1.4rem;
 }
@@ -45,4 +44,14 @@
 .h1 {
     font-size: var(--lg-xxx);
     line-height: 6.2rem;
+}
+
+.h2 {
+    line-height: 6.2rem;
+}
+
+.h2:first-child {
+    width: 40%;
+    margin: auto;
+    text-align: center;
 }
