@@ -10,6 +10,10 @@
     grid-template-columns: min-content auto min-content;
 }
 
+.navbar-mobile {
+    display: none;
+}
+
 .nav--center {
     display: flex;
     place-items: center;

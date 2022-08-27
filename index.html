@@ -17,6 +17,7 @@
       media="(min-width: 1024px)"
       href="/css/desktop.css"
     />
+    <script defer src="/js/main.js"></script>
     <meta
       name="description"
       content="Home pets where you find your happiness adopting a pet"
@@ -25,6 +26,22 @@
     <meta name="robots" content="index, follow" />
   </head>
   <body>
+    <nav class="navbar-mobile hidden">
+      <ul class="nav-mobile">
+        <li class="item-nav">
+          <a class="link-sm" href="#Home">Home</a>
+        </li>
+        <li class="item-nav">
+          <a class="link-sm" href="#AboutUs">About us</a>
+        </li>
+        <li class="item-nav">
+          <a class="link-sm" href="#Collections">Collections</a>
+        </li>
+        <li class="item-nav">
+          <a class="link-sm" href="#Gallery">Gallery</a>
+        </li>
+      </ul>
+    </nav>
     <nav class="navbar">
       <div class="nav--left">
         <a href="/index.html" class="container__logo">
@@ -110,7 +127,7 @@
           </figure>
         </div>
       </section>
-      <section class="container container__meet">
+      <section class="container container__meet" id="AboutUs">
         <h2 class="h2">Meet your pet's need so they live happily</h2>
         <div class="flex container__card-meet">
           <div class="card-meet transition-color">
@@ -144,7 +161,7 @@
             </p>
           </div>
         </div>
-        <section class="container__find">
+        <section class="container__find" id="Collections">
           <div class="find--left">
             <div class="icon icon-square icon-cage-pets"></div>
             <img
