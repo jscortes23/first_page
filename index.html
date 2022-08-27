@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,8 +27,10 @@
   <body>
     <nav class="navbar">
       <div class="nav--left">
-        <span class="icon icon-md icon-logo"></span>
-        <p class="text-md text-bold">HomePet</p>
+        <a href="/index.html" class="container__logo">
+          <span class="icon icon-md icon-logo"></span>
+          <p class="text-md text-bold">HomePet</p>
+        </a>
       </div>
       <ul class="nav--center">
         <li class="">
@@ -51,118 +53,129 @@
         <button class="btn">
           <span class="icon icon-sm icon-bag"></span>
         </button>
-        <button class="btn btn-primary">Login in</button>
+        <a
+          class="btn btn-primary"
+          href="/routers/login.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Login in</a
+        >
       </div>
       <button class="btn btn-menu">
         <span class="icon icon-sm icon-menu"></span>
       </button>
     </nav>
-    <section class="flex container container__home" id="Home">
-      <div class="home--left flex flex-column">
-        <h1 class="h1">
-          Find <u class="underline">cute and smart</u> pets to play with you
-        </h1>
-        <p class="text">
-          We provide food, equipmentand we provide pes too. In additional we
-          provide pet health cosulting services.
-        </p>
-        <div class="flex">
-          <button class="btn btn-primary">Explore Now</button>
-          <div class="flex home__explore">
-            <div class="container-sm">
-              <span class="text-lg-xx color-primary">2.5k+</span>
-              <span class="text">Customers</span>
-            </div>
-            <div class="container-sm">
-              <span class="text-lg-xx color-primary">370+</span>
-              <span class="text">Collections</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="home--right flex">
-        <figure class="container__img">
-          <img
-            class="img"
-            src="/assets/imgs/gato-golpe.jpeg"
-            alt="Gato dando la pata"
-          />
-          <div class="container__thing__pet">
-            <span class="icon icon-md icon-necklace"></span>
-            <p class="text-sm text">
-              Necklace with bell <span class="color-primary">$10</span> <br />
-              Don't miss this opportunity
-            </p>
-          </div>
-          <figcaption class="flex container__img__description">
-            <span class="text__img__description">Gato flow</span>
-            <span class="text-lg-xx color-primary">$470</span>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-    <section class="container container__meet">
-      <h2 class="h2">Meet your pet's need so they live happily</h2>
-      <div class="flex container__card-meet">
-        <div class="card-meet transition-color">
-          <h3 class="h3 card-meet__title">
-            <span class="icon icon-card icon-book transition-color"></span
-            >Animal health consultation
-          </h3>
-          <p class="text transition-color">
-            We provide food, equipment, and we provide pets too. In addition we
-          </p>
-        </div>
-        <div class="card-meet transition-color">
-          <h3 class="h3 card-meet__title">
-            <span class="icon icon-card icon-bones transition-color"></span>Buy
-            equipment & pet foot
-          </h3>
-          <p class="text transition-color">
-            We provide food, equipment, and we provide pets too. In addition we
-          </p>
-        </div>
-        <div class="card-meet transition-color">
-          <h3 class="h3 card-meet__title">
-            <span class="icon icon-card icon-face-cat transition-color"></span
-            >Buy a new collection of pets
-          </h3>
-          <p class="text transition-color">
-            We provide food, equipment, and we provide pets too. In addition we
-          </p>
-        </div>
-      </div>
-      <section class="container__find">
-        <div class="find--left">
-          <div class="icon icon-square icon-cage-pets"></div>
-          <img
-            src="https://images.pexels.com/photos/1314550/pexels-photo-1314550.jpeg?auto=compress&cs=tinysrgb&w=400"
-            alt="cat"
-            class="img__find"
-          />
-          <div class="icon icon-square icon-food-pets"></div>
-          <img
-            src="https://images.pexels.com/photos/38008/pexels-photo-38008.jpeg?auto=compress&cs=tinysrgb&w=400"
-            alt="dog can"
-            class="img__find"
-          />
-          <div class="icon icon-square icon-necklace"></div>
-          <img
-            src="https://images.pexels.com/photos/981062/pexels-photo-981062.jpeg?auto=compress&cs=tinysrgb&w=400"
-            alt="dog small"
-            class="img__find"
-          />
-        </div>
-        <div class="find--right">
-          <h2 class="h2">Find a large collection of complete pets</h2>
+    <main>
+      <section class="flex container container__home" id="Home">
+        <div class="home--left flex flex-column">
+          <h1 class="h1">
+            Find <u class="underline">cute and smart</u> pets to play with you
+          </h1>
           <p class="text">
-            We provide food equipment, and we provide pets too. In addition we
-            provide pet health consulting services.
+            We provide food, equipmentand we provide pes too. In additional we
+            provide pet health cosulting services.
           </p>
-          <button class="btn btn-primary">Explore now</button>
+          <div class="flex">
+            <button class="btn btn-primary">Explore Now</button>
+            <div class="flex home__explore">
+              <div class="container-sm">
+                <span class="text-lg-xx color-primary">2.5k+</span>
+                <span class="text">Customers</span>
+              </div>
+              <div class="container-sm">
+                <span class="text-lg-xx color-primary">370+</span>
+                <span class="text">Collections</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home--right flex">
+          <figure class="container__img">
+            <img
+              class="img"
+              src="/assets/imgs/gato-golpe.jpeg"
+              alt="Gato dando la pata"
+            />
+            <div class="container__thing__pet">
+              <span class="icon icon-md icon-necklace"></span>
+              <p class="text-sm text">
+                Necklace with bell <span class="color-primary">$10</span> <br />
+                Don't miss this opportunity
+              </p>
+            </div>
+            <figcaption class="flex container__img__description">
+              <span class="text__img__description">Gato flow</span>
+              <span class="text-lg-xx color-primary">$470</span>
+            </figcaption>
+          </figure>
         </div>
       </section>
-    </section>
-    <section class=""></section>
+      <section class="container container__meet">
+        <h2 class="h2">Meet your pet's need so they live happily</h2>
+        <div class="flex container__card-meet">
+          <div class="card-meet transition-color">
+            <h3 class="h3 card-meet__title">
+              <span class="icon icon-card icon-book transition-color"></span
+              >Animal health consultation
+            </h3>
+            <p class="text transition-color">
+              We provide food, equipment, and we provide pets too. In addition
+              we
+            </p>
+          </div>
+          <div class="card-meet transition-color">
+            <h3 class="h3 card-meet__title">
+              <span class="icon icon-card icon-bones transition-color"></span
+              >Buy equipment & pet foot
+            </h3>
+            <p class="text transition-color">
+              We provide food, equipment, and we provide pets too. In addition
+              we
+            </p>
+          </div>
+          <div class="card-meet transition-color">
+            <h3 class="h3 card-meet__title">
+              <span class="icon icon-card icon-face-cat transition-color"></span
+              >Buy a new collection of pets
+            </h3>
+            <p class="text transition-color">
+              We provide food, equipment, and we provide pets too. In addition
+              we
+            </p>
+          </div>
+        </div>
+        <section class="container__find">
+          <div class="find--left">
+            <div class="icon icon-square icon-cage-pets"></div>
+            <img
+              src="https://images.pexels.com/photos/1314550/pexels-photo-1314550.jpeg?auto=compress&cs=tinysrgb&w=400"
+              alt="cat"
+              class="img__find"
+            />
+            <div class="icon icon-square icon-food-pets"></div>
+            <img
+              src="https://images.pexels.com/photos/38008/pexels-photo-38008.jpeg?auto=compress&cs=tinysrgb&w=400"
+              alt="dog can"
+              class="img__find"
+            />
+            <div class="icon icon-square icon-necklace"></div>
+            <img
+              src="https://images.pexels.com/photos/981062/pexels-photo-981062.jpeg?auto=compress&cs=tinysrgb&w=400"
+              alt="dog small"
+              class="img__find"
+            />
+          </div>
+          <div class="find--right">
+            <h2 class="h2">Find a large collection of complete pets</h2>
+            <p class="text">
+              We provide food equipment, and we provide pets too. In addition we
+              provide pet health consulting services.
+            </p>
+            <button class="btn btn-primary">Explore now</button>
+          </div>
+        </section>
+      </section>
+      <section class=""></section>
+    </main>
   </body>
 </html>
