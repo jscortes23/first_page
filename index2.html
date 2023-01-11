@@ -10,7 +10,7 @@
       type="image/x-icon.svg"
     />
     <title>Home pet - Find your happiness by adopting a pets</title>
-    <link rel="stylesheet" href="/css/mobile.css" />
+    <link rel="stylesheet" href="/css/min.css" />
     <link rel="stylesheet" media="(min-width: 720px)" href="/css/tablet.css" />
     <link
       rel="stylesheet"
@@ -29,62 +29,35 @@
   </head>
   <body>
     <header class="container__header">
-      <nav class="navbar-mobile hidden">
-        <ul class="nav-mobile">
-          <li class="item-nav">
-            <a class="link-sm" href="#Home">Home</a>
+      <a href="/index.html" class="header__container__logo">
+        <span class="icon icon-logo"></span>
+        HomePet
+      </a>
+      <nav class="header__container__navbar">
+        <ul class="header__navbar">
+          <li>
+            <a class="header__navbar__link" href="#Home">Home</a>
           </li>
-          <li class="item-nav">
-            <a class="link-sm" href="#AboutUs">About us</a>
+          <li>
+            <a class="header__navbar__link" href="#AboutUs">About us</a>
           </li>
-          <li class="item-nav">
-            <a class="link-sm" href="#Collections">Collections</a>
+          <li>
+            <a class="header__navbar__link" href="#Collections">Collections</a>
           </li>
-          <li class="item-nav">
-            <a class="link-sm" href="#Gallery">Gallery</a>
+          <li>
+            <a class="header__navbar__link" href="#Gallery">Gallery</a>
           </li>
         </ul>
       </nav>
-      <nav class="navbar">
-        <div class="nav--left">
-          <a href="/index.html" class="container__logo">
-            <span class="icon icon-md icon-logo"></span>
-            <p class="text-md text-bold">HomePet</p>
-          </a>
-        </div>
-        <ul class="nav--center">
-          <li class="">
-            <a class="link-sm" href="#Home">Home</a>
-          </li>
-          <li class="">
-            <a class="link-sm" href="#AboutUs">About us</a>
-          </li>
-          <li class="">
-            <a class="link-sm" href="#Collections">Collections</a>
-          </li>
-          <li class="">
-            <a class="link-sm" href="#Gallery">Gallery</a>
-          </li>
-        </ul>
-        <div class="nav--right">
-          <button class="btn">
-            <span class="icon icon-sm icon-search"></span>
-          </button>
-          <button class="btn">
-            <span class="icon icon-sm icon-bag"></span>
-          </button>
-          <a
-            class="btn btn-primary"
-            href="/routers/login.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Login in</a
-          >
-        </div>
-        <button class="btn btn-menu">
-          <span class="icon icon-sm icon-menu"></span>
-        </button>
-      </nav>
+      <button class="btn icon icon-search"></button>
+      <button class="btn icon icon-bag"></button>
+      <a
+        class="btn btn-primary"
+        href="/routers/login.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Login in</a
+      >
     </header>
     <main>
       <section class="flex container container__home" id="Home">

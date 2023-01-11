@@ -1,0 +1,223 @@
+/*************************************************/
+/*****              Reset                    *****/
+/*************************************************/
+
+/* Box sizing */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Reset margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+/* text accesiblily */
+html {
+  font-size: 62.5%;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Make from element easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::after,
+  *::before {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #f86250;
+    --hover-primary-color: #ff1e05;
+    --secondary-color: #183643;
+    --white: #ffffff;
+    --font-img: #31c6db;
+    --grey: #757575;
+
+    --lg-xxx: 3rem;
+    --lg-xx: 2.8rem;
+    --lg-x: 2.6rem;
+    --lg: 2.4rem;
+    --md: 2.2rem;
+    --sm: 2rem;
+    --sm-x: 1.8rem;
+    --sm-xx: 1.6rem;
+    --sm-xxx: 1.2rem;
+}
+
+/*************************************************/
+/*****              HEADER                   *****/
+/*************************************************/
+
+.container__header {
+    position: sticky;
+    left: 0;
+    top: 0;
+    padding: 12px 12px 40px;
+    width: 100%;
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: min-content auto repeat(3, min-content);
+    column-gap: 32px;
+    align-items: center;
+    justify-items: center;
+    z-index: 10;
+    font-size: var(--sm-x);
+}
+
+.header__container__logo {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.header__navbar {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+    list-style: none;
+}
+
+.header__navbar .header__navbar__link {
+    color: var(--grey);
+    text-decoration: none;
+}
+
+.header__navbar .header__navbar__link:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/*************************************************/
+/*****              ICONS                    *****/
+/*************************************************/
+
+.icon {
+    display: inline-block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon-logo {
+    width: 40px;
+    height: 40px;
+    background-image: url('/assets/icons/huella-mascota.svg');
+}
+
+.icon-search {
+    width: 24px;
+    height: 24px;
+    background-image: url('/assets/icons/busqueda.svg');
+}
+
+.icon-bag {
+    width: 24px;
+    height: 24px;
+    background-image: url('/assets/icons/bolsa-de-compra.svg');
+}
+
+.icon-necklace {
+    background-image: url('/assets/icons/collar.png');
+}
+
+.icon-menu {
+    width: 40px;
+    height: 40px;
+    background-image: url('/assets/icons/menu-hamburguesa.svg');
+}
+
+.icon-face-cat {
+    background-image: url('/assets/icons/cara-gato.png');
+}
+
+.icon-book {
+    background-image: url('/assets/icons/libro.png');
+}
+
+.icon-bones {
+    background-image: url('/assets/icons/hueso.png');
+}
+
+.icon-food-pets {
+    background-image: url('/assets/icons/comida-de-perro.png');
+}
+
+.icon-cage-pets {
+    background-image: url('/assets/icons/jaula-para-mascotas.png');
+}
+
+/*************************************************/
+/*****              BUTTONS                  *****/
+/*************************************************/
+
+.btn {
+    display: inline-block;
+    font-family: inherit;
+    font-size: var(--md);
+    background-color: white;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-primary {
+    padding: 12px calc(12px * 2);
+    white-space: nowrap;
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    box-shadow: 8px 8px var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-primary-color);
+    border: 2px solid black;
+    box-shadow: 8px 8px black;
+}
+
+.btn--transition {
+    transition:
+    border 200ms ease-in, 
+    color 200ms ease-in,
+    background-color 200ms ease-in,
+    box-shadow 200ms ease-in;
+}

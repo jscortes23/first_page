@@ -24,64 +24,67 @@
     />
     <meta name="keywords" content="pets, pet shop, adopt, toys, food" />
     <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="#">
   </head>
   <body>
-    <nav class="navbar-mobile hidden">
-      <ul class="nav-mobile">
-        <li class="item-nav">
-          <a class="link-sm" href="#Home">Home</a>
-        </li>
-        <li class="item-nav">
-          <a class="link-sm" href="#AboutUs">About us</a>
-        </li>
-        <li class="item-nav">
-          <a class="link-sm" href="#Collections">Collections</a>
-        </li>
-        <li class="item-nav">
-          <a class="link-sm" href="#Gallery">Gallery</a>
-        </li>
-      </ul>
-    </nav>
-    <nav class="navbar">
-      <div class="nav--left">
-        <a href="/index.html" class="container__logo">
-          <span class="icon icon-md icon-logo"></span>
-          <p class="text-md text-bold">HomePet</p>
-        </a>
-      </div>
-      <ul class="nav--center">
-        <li class="">
-          <a class="link-sm" href="#Home">Home</a>
-        </li>
-        <li class="">
-          <a class="link-sm" href="#AboutUs">About us</a>
-        </li>
-        <li class="">
-          <a class="link-sm" href="#Collections">Collections</a>
-        </li>
-        <li class="">
-          <a class="link-sm" href="#Gallery">Gallery</a>
-        </li>
-      </ul>
-      <div class="nav--right">
-        <button class="btn">
-          <span class="icon icon-sm icon-search"></span>
+    <header>
+      <nav class="navbar-mobile hidden">
+        <ul class="nav-mobile">
+          <li class="item-nav">
+            <a class="link-sm" href="#Home">Home</a>
+          </li>
+          <li class="item-nav">
+            <a class="link-sm" href="#AboutUs">About us</a>
+          </li>
+          <li class="item-nav">
+            <a class="link-sm" href="#Collections">Collections</a>
+          </li>
+          <li class="item-nav">
+            <a class="link-sm" href="#Gallery">Gallery</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="navbar">
+        <div class="nav--left">
+          <a href="/index.html" class="container__logo">
+            <span class="icon icon-md icon-logo"></span>
+            <p class="text-md text-bold">HomePet</p>
+          </a>
+        </div>
+        <ul class="nav--center">
+          <li class="">
+            <a class="link-sm" href="#Home">Home</a>
+          </li>
+          <li class="">
+            <a class="link-sm" href="#AboutUs">About us</a>
+          </li>
+          <li class="">
+            <a class="link-sm" href="#Collections">Collections</a>
+          </li>
+          <li class="">
+            <a class="link-sm" href="#Gallery">Gallery</a>
+          </li>
+        </ul>
+        <div class="nav--right">
+          <button class="btn">
+            <span class="icon icon-sm icon-search"></span>
+          </button>
+          <button class="btn">
+            <span class="icon icon-sm icon-bag"></span>
+          </button>
+          <a
+            class="btn btn-primary"
+            href="/routers/login.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Login in</a
+          >
+        </div>
+        <button class="btn btn-menu">
+          <span class="icon icon-sm icon-menu"></span>
         </button>
-        <button class="btn">
-          <span class="icon icon-sm icon-bag"></span>
-        </button>
-        <a
-          class="btn btn-primary"
-          href="/routers/login.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Login in</a
-        >
-      </div>
-      <button class="btn btn-menu">
-        <span class="icon icon-sm icon-menu"></span>
-      </button>
-    </nav>
+      </nav>
+    </header>
     <main>
       <div class="container container__login">
         <span class="icon icon-md icon-logo"></span>
@@ -101,9 +104,9 @@
             />
             <span class="container__input__txt">Password</span>
           </label>
-          <input class="btn btn-primary" type="submit" value="Login in" />
+          <input class="btn btn-primary transition-color" type="submit" value="Login in" />
         </form>
-        <a class="btn btn-secondary" href="/routers/sign-up.html">Sign up</a>
+        <a class="btn btn-secondary transition-color" href="/routers/sign-up.html">Sign up</a>
       </div>
     </main>
   </body>

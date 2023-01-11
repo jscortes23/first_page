@@ -1,3 +1,59 @@
+/* ------------------------ */
+/* Reset                    */
+/* ------------------------ */
+
+/* Box sizing */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Reset margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+/* text accesiblily */
+html {
+  font-size: 62.5%;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Make from element easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::after,
+  *::before {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,19 +69,10 @@ a {
     color: inherit;
 }
 
-figure, figcaption, img {
-    margin: 0;
-    padding: 0;
-}
-
-picture, img {
-    max-width: 100%;
-    display: block;
-}
-
 html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -41,7 +88,6 @@ html {
     --md: 1.6rem;
     --sm: 1.4rem;
 }
-
 
 .navbar {
     width: 100%;
@@ -263,6 +309,10 @@ html {
     color: var(--primary-color);
 }
 
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
 .container {
     border: 2px solid black;
 }
@@ -390,38 +440,42 @@ html {
 .container__img {
     position: relative;
     z-index: 1;
-    width: 252px;
+    width: 252.1px;
     height: 350px;
-    border: 2px solid black;
+    outline: 2px solid black;
     border-radius: 8px;
-    box-shadow: 16px 16px var(--primary-color);
+    box-shadow: 14px 14px var(--primary-color);
 }
 
 .container__img::after {
     content: '';
     position: absolute;
     z-index: -1;
-    top: 12.2px;
-    left: 12px;
+    top: 14px;
+    left: 14px;
     width: inherit;
     height: inherit;
-    border: 2px solid black;
+    outline: 2px solid black;
     border-radius: inherit;
 }
 
 .img {
-    width: 100%;
-    height: 84%;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
     object-position: center;
     object-fit: cover;
 }
 
+.img__main {
+    aspect-ratio: 6/7;
+    width: 100%;
+    outline: 2px solid black;
+}
+
 .img__find {
     width: 180px;
     aspect-ratio: 2/3;
-    border: 2px solid black;
+    outline: 2px solid black;
     border-radius: 6px;
     box-shadow: -8px 8px var(--primary-color);
     object-position: center;
@@ -429,18 +483,13 @@ html {
 }
 
 .container__img__description {
+    height: 16%;
     align-items: center;
     justify-content: space-evenly;
-}
-
-.container__img__description {
-    height: 16%;
     background-color: white;
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
-    border-top: 2px solid black;
 }
-
 
 .container__meet {
     width: 100%;
@@ -544,3 +593,106 @@ html {
 .h3 {
     font-size: var(--lg);
 }
+
+
+/* Carrusel */
+
+.container__carousel {
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.container__names-breeds {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    column-gap: 64px;
+    height: 68px;
+    list-style: disc;
+    animation: slider 20s both infinite linear;
+}
+
+.name-breed {
+    font-size: var(--lg-x);
+    color: white;
+    white-space: nowrap;
+}
+
+@keyframes slider {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Section search Collection */
+.container__buttons {
+    gap: 32px;
+    justify-content: center;
+}
+
+.btn-input {
+    display: none;
+}
+
+.btn-input:checked + .btn-simple {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-simple {
+    display: inline-block;
+    min-width: 120px;
+    text-align: center;
+    padding: 12px 24px;
+    color: var(--grey);
+    border: 2px solid black;
+}
+
+.container__collection {
+    padding: 98px 16px 132px;
+}
+
+.container__collection > .h2, .container__buttons {
+    text-align: center;
+    margin-bottom: 46px;
+}
+
+.container__collection-pets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 252px));
+    place-content: center;
+    gap: 54px;
+}
+
+.collection-pets--container__img {
+    position: relative;
+    z-index: 1;
+    width: 252.1px;
+    height: 350px;
+    outline: 2px solid black;
+    border-radius: 8px;
+}
+
+.collection-pets--container__img::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 14px;
+    left: 14px;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+
+.collection-pets--container__img:hover {
+    box-shadow: 14px 14px var(--primary-color);
+}
+
+.collection-pets--container__img:hover::after {
+    outline: 2px solid black;
+}
+
